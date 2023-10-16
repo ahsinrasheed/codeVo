@@ -2,12 +2,12 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-blue-800 text-white py-8 md: text-center">
+    <footer className="bg-slate-100 text-black py-8 md: text-center">
       <div className="container mx-auto">
         <div className="md:flex md:justify-around">
           {/* Quick Links */}
-          <div className="md:w-1/12	">
-            <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
+          <div className="md:w-1/8	">
+            <h2 className="text-xl font-semibold mb-4">Company</h2>
             <ul>
               <li>
                 <Link href="/">Home</Link>
@@ -19,24 +19,31 @@ const Footer = () => {
                 <Link href="/services">Services</Link>
               </li>
               <li>
-                <Link href="/contact">Contact Us</Link>
+                <Link href="/contact">Portfolio</Link>
+              </li>
+              <li>
+                <Link href="/contact">Blogs</Link>
+              </li>
+              <li>
+                <Link href="/contact">Careers</Link>
               </li>
             </ul>
           </div>
 
           {/* Services */}
-          <div className="md:w-1/12	 mt-6 md:mt-0">
+          <div className="md:w-1/8	 mt-6 md:mt-0">
             <h2 className="text-xl font-semibold mb-4">Services</h2>
             <ul>
-              <li>Web Design</li>
+              <li>Web Development</li>
+              <li>Mobile App Development</li>
               <li>Graphic Design</li>
-              <li>Digital Marketing</li>
-              <li>SEO Optimization</li>
+              <li>Web Design</li>
+              <li>CMR Development</li>
             </ul>
           </div>
 
           {/* Address */}
-          <div className="md:w-1/12	 mt-6 md:mt-0">
+          <div className="md:w-1/8	 mt-6 md:mt-0">
             <h2 className="text-xl font-semibold mb-4">Address</h2>
             <p>
               House No. 607 Johar Town <br />
@@ -45,7 +52,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media Links */}
-          <div className="mt-6 md:mt-0">
+          <div className="md:w-1/8 mt-6 md:mt-0">
             <h2 className="text-xl font-semibold mb-4">Follow Us</h2>
             <div className="flex justify-center space-x-4">
               <a href="#" target="_blank" rel="noopener noreferrer">
