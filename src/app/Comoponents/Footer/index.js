@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="md:flex md:justify-around">
           {/* Quick Links */}
-          <div className="md:w-1/4">
+          <div className="md:w-1/12	">
             <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
             <ul>
               <li>
@@ -24,17 +24,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Address */}
-          <div className="md:w-1/4 mt-6 md:mt-0">
-            <h2 className="text-xl font-semibold mb-4">Address</h2>
-            <p>
-              House No. 607 Johar Town <br />
-              Lahore, Pakistan
-            </p>
-          </div>
-
           {/* Services */}
-          <div className="md:w-1/4 mt-6 md:mt-0">
+          <div className="md:w-1/12	 mt-6 md:mt-0">
             <h2 className="text-xl font-semibold mb-4">Services</h2>
             <ul>
               <li>Web Design</li>
@@ -42,6 +33,15 @@ const Footer = () => {
               <li>Digital Marketing</li>
               <li>SEO Optimization</li>
             </ul>
+          </div>
+
+          {/* Address */}
+          <div className="md:w-1/12	 mt-6 md:mt-0">
+            <h2 className="text-xl font-semibold mb-4">Address</h2>
+            <p>
+              House No. 607 Johar Town <br />
+              Lahore, Pakistan
+            </p>
           </div>
 
           {/* Social Media Links */}

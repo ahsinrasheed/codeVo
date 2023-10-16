@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Logo from "@/assests/images/logo.png"; // Correct the asset path
 import { useState } from "react"; // Import useState
+import styles from "./navbar.module.css";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false); // Initialize menu state
@@ -13,9 +14,9 @@ const Navbar = () => {
   };
 
   return (
-    <div>
-      <nav className=" p-4">
-        <div className="container mx-auto flex flex-col md:flex-row justify-around items-center">
+    <div className="p-4">
+      <nav className={`${styles.mainLayout}`}>
+        <div className="mx-auto flex flex-col md:flex-row justify-around items-center">
           <Link href="/">
             <Image src={Logo} alt="Logo" width={120} height={40} />
           </Link>

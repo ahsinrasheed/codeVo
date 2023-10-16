@@ -1,0 +1,10 @@
+.mainLayout {
+  background-image: url("../../../../assests/images/Background-pic.png");
+  padding: 50px 80px;
+}
+
+@media only screen and (max-width: 767px) {
+  .mainLayout {
+    flex-direction: column;
+  }
+}
