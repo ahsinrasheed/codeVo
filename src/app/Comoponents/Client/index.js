@@ -1,6 +1,9 @@
 "use client";
 import ClientCard from "./ClientCard";
 import styles from "./client.module.css";
+
+import { ClientData } from "@/shared/Constants/constants";
+
 const Client = () => {
   return (
     <div className={`p-4 ${styles.mainLayOut}`}>
@@ -13,7 +16,19 @@ const Client = () => {
           understood by looking at their feedback
         </p>
       </div>
-      <ClientCard />
+      <div className="flex flex-wrap gap-6 justify-center">
+        {ClientData.map((data, index) => (
+          <>
+            <ClientCard
+              key={index}
+              title={data.title}
+              imageUrl={data.imageUrl}
+              details={data.details}
+              backgroundColor={data.backgroundColor}
+            />
+          </>
+        ))}
+      </div>
     </div>
   );
 };

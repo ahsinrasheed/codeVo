@@ -3,6 +3,7 @@ import Footer from "../Comoponents/Footer";
 import Hero from "../Comoponents/Hero";
 import Idea from "../Comoponents/Idea";
 import Navbar from "../Comoponents/Navbar";
+import TrustedClients from "../Comoponents/TrustedClients";
 import WorkProcess from "../Comoponents/WorkProcess";
 
 const CodeVo = () => {
@@ -13,6 +14,7 @@ const CodeVo = () => {
       <Idea />
       {/* <WorkProcess /> */}
       <Client />
+      <TrustedClients />
       <Footer />
     </>
   );

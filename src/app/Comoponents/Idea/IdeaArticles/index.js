@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Button from "@/assests/shared/Button";
+import Button from "@/shared/Button/index";
 
 const IdeaArticles = ({ srNo, details }) => {
   return (

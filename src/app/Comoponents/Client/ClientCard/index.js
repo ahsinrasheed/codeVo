@@ -1,21 +1,22 @@
-"use Client";
-
 import Image from "next/image";
-import ClientImage from "@/assests/images/Client1.png";
-import ClientImage1 from "@/assests/images/Client2.png";
-import ClientImage2 from "@/assests/images/Client3.png";
+import React from "react";
+import styles from "./clientCard.module.css";
 
-const ClientCard = () => {
+const ClientCard = ({ title, imageUrl, details, backgroundColor }) => {
   return (
-    <div className="p-4">
-      <div className="flex flex-row  align-center gap-3">
-        <Image src={ClientImage} alt="" />
-        <h4 className="">Mila McSabbu</h4>
+    <div
+      className="p-4 max-w-sm"
+      style={{
+        background: backgroundColor,
+      }}
+    >
+      <div
+        className={`p-4 flex flex-row align-center  gap-3 ${styles.customStyle}`}
+      >
+        <Image src={imageUrl} alt="" width={100} height={100} />
+        <h4 className="mt-8 text-lg font-bold text-center">{title}</h4>
       </div>
-      <p className="p-4">
-        “An easy-to-use catalog manager that helps you keep your music metadata
-        organized.”
-      </p>
+      <p className="p-4">{details}</p>
     </div>
   );
 };

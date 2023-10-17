@@ -14,7 +14,7 @@ const WorkProcess = () => {
           We always follow the standard work process
         </h2>
       </div>
-      <p className="text-black text-center md:text-lg	sm:text-xs">
+      <p className="text-white font-normal text-center md:text-lg	sm:text-xs">
         We solve clients projects in a simple & efficient way
       </p>
       <div className="flex justify-center  ">
